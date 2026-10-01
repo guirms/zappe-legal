@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade | Zappe</title>
+  <meta name="description" content="Como o Zappe trata dados pessoais de empresas clientes, seus usuários e os clientes que conversam com elas pelo WhatsApp." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <style>
+    :root {
+      --primary: #005cbb;
+      --text: #1a1c1e;
+      --muted: #44474e;
+      --surface: #ffffff;
+      --background: #f8f9ff;
+      --border: #dfe2eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #abc7ff;
+        --text: #e2e2e6;
+        --muted: #c4c6d0;
+        --surface: #1a1c1e;
+        --background: #111318;
+        --border: #43474e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 16px 8px;
+    }
+    header img { width: 40px; height: 40px; border-radius: 8px; }
+    header span { font-size: 22px; font-weight: 600; color: var(--primary); }
+    main {
+      max-width: 820px;
+      margin: 16px auto 48px;
+      padding: 32px clamp(16px, 4vw, 40px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    h1 { font-size: 28px; line-height: 1.3; margin: 0 0 4px; }
+    h2 { font-size: 20px; margin: 36px 0 8px; color: var(--primary); }
+    h3 { font-size: 17px; margin: 20px 0 4px; }
+    p, li { color: var(--text); }
+    .updated { color: var(--muted); margin-top: 0; }
+    a { color: var(--primary); }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; }
+    .table-wrap { overflow-x: auto; }
+    footer { max-width: 820px; margin: 0 auto 32px; padding: 0 16px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="" />
+    <span>Zappe</span>
+  </header>
+
+  <main>
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: 30 de setembro de 2026</p>
+
+    <p>
+      O Zappe é uma plataforma em que empresas conectam o número oficial do WhatsApp (API de Nuvem da Meta) para que
+      uma inteligência artificial atenda os clientes delas, passando a conversa para uma pessoa da equipe quando
+      necessário. Esta política explica quais dados pessoais o Zappe trata, para quê, com quem compartilha e quais são
+      os seus direitos pela Lei Geral de Proteção de Dados (Lei 13.709/2018, LGPD).
+    </p>
+
+    <h2>1. Quem somos</h2>
+    <p>
+      O Zappe é operado pela <strong>Endura Desafios Virtuais</strong>, inscrita no CNPJ sob o nº
+      <strong>59.173.759/0001-19</strong>. Contato para assuntos de privacidade e proteção de dados, inclusive do
+      encarregado (DPO): <a href="mailto:contato.zappe.ia@gmail.com">contato.zappe.ia@gmail.com</a>.
+    </p>
+
+    <h2>2. Nosso papel em cada tipo de dado</h2>
+    <ul>
+      <li>
+        <strong>Controlador</strong> dos dados das empresas que contratam o Zappe e das pessoas que usam o painel
+        (administradores e atendentes): decidimos como esses dados são usados para prestar o serviço.
+      </li>
+      <li>
+        <strong>Operador</strong> dos dados dos clientes finais que conversam com essas empresas pelo WhatsApp: tratamos
+        esses dados em nome da empresa contratante, que é a controladora, e segundo as instruções dela. Pedidos sobre
+        essas conversas devem ser feitos primeiro à própria empresa; nós a ajudamos a atendê-los.
+      </li>
+    </ul>
+
+    <h2>3. Dados que tratamos</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>De quem</th><th>Quais dados</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Empresas clientes</td>
+            <td>Razão social, CNPJ, plano contratado, configurações do atendimento (horário, regras e instruções da IA)
+              e dados da conta do WhatsApp Business conectada: identificadores da conta e do número, nome verificado,
+              número de telefone e o token de acesso concedido pela Meta.</td>
+          </tr>
+          <tr>
+            <td>Usuários do painel</td>
+            <td>Nome, e-mail, perfil de acesso (administrador ou atendente), senha guardada apenas como hash
+              irreversível e registros de sessão (tokens de acesso e de renovação).</td>
+          </tr>
+          <tr>
+            <td>Clientes finais no WhatsApp</td>
+            <td>Número de telefone, nome de perfil do WhatsApp, conteúdo das mensagens trocadas (texto, áudio, imagem,
+              vídeo e documentos), transcrições de áudio, datas, horários e status de entrega e leitura.</td>
+          </tr>
+          <tr>
+            <td>Uso do serviço</td>
+            <td>Quantidade de conversas atendidas, minutos de áudio transcritos, tokens consumidos pela IA, tempo de
+              resposta e motivo das transferências para atendimento humano.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Não pedimos dados sensíveis. Se um cliente final os enviar espontaneamente numa conversa, eles são tratados como
+      parte da mensagem, com as mesmas proteções.
+    </p>
+
+    <h2>4. Para que usamos e com qual base legal</h2>
+    <ul>
+      <li><strong>Prestar o serviço contratado</strong>: receber e enviar mensagens pelo WhatsApp, gerar as respostas
+        da IA, transcrever áudios, mostrar as conversas no painel e transferir para atendimento humano (execução de
+        contrato, art. 7º, V).</li>
+      <li><strong>Autenticar usuários e proteger a plataforma</strong>: login, controle de acesso por empresa e por
+        perfil, prevenção de abuso (execução de contrato e legítimo interesse, art. 7º, V e IX).</li>
+      <li><strong>Medir o uso e cobrar</strong> conforme o plano contratado (execução de contrato).</li>
+      <li><strong>Cumprir obrigações legais</strong> e atender autoridades quando exigido (art. 7º, II).</li>
+    </ul>
+    <p>
+      Não vendemos dados pessoais, não os usamos para publicidade e não usamos o conteúdo das conversas para treinar
+      modelos de inteligência artificial.
+    </p>
+
+    <h2>5. Atendimento por inteligência artificial</h2>
+    <p>
+      As respostas automáticas são geradas por um modelo de IA a partir das mensagens da conversa e das instruções
+      configuradas pela empresa. A empresa define quando a conversa passa para uma pessoa, e o cliente final pode pedir
+      atendimento humano a qualquer momento. A IA é orientada a não negar que é uma IA quando perguntada.
+    </p>
+
+    <h2>6. Com quem compartilhamos</h2>
+    <p>Compartilhamos dados apenas com os fornecedores necessários para o funcionamento do serviço:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Fornecedor</th><th>Para quê</th><th>Dados</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meta Platforms (WhatsApp Business Platform)</td>
+            <td>Envio e recebimento das mensagens e conexão do número</td>
+            <td>Mensagens, mídias, número e dados da conta do WhatsApp Business</td>
+          </tr>
+          <tr>
+            <td>Anthropic (Claude)</td>
+            <td>Geração das respostas da IA e leitura de imagens</td>
+            <td>Texto e imagens da conversa, nome do cliente e instruções da empresa</td>
+          </tr>
+          <tr>
+            <td>Groq ou OpenAI</td>
+            <td>Transcrição de mensagens de áudio</td>
+            <td>Arquivos de áudio recebidos</td>
+          </tr>
+          <tr>
+            <td>Provedores de nuvem (hospedagem, banco de dados e armazenamento de arquivos compatível com S3)</td>
+            <td>Execução da plataforma e guarda das mídias</td>
+            <td>Todos os dados descritos nesta política</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Esses fornecedores tratam os dados apenas para prestar o serviço ao Zappe, segundo os próprios termos comerciais.
+      Também podemos compartilhar dados quando exigido por lei ou ordem de autoridade competente.
+    </p>
+
+    <h2>7. Transferência internacional</h2>
+    <p>
+      Parte desses fornecedores, como Meta, Anthropic, Groq e OpenAI, processa dados fora do Brasil, principalmente nos
+      Estados Unidos. Essas transferências são feitas para executar o contrato com a empresa cliente, com fornecedores
+      que adotam garantias de segurança e confidencialidade, conforme o art. 33 da LGPD.
+    </p>
+
+    <h2>8. Como protegemos os dados</h2>
+    <ul>
+      <li>Comunicação criptografada (HTTPS/TLS) entre navegador, servidores e fornecedores.</li>
+      <li>Tokens de acesso do WhatsApp guardados com criptografia AES-256-GCM.</li>
+      <li>Senhas guardadas apenas como hash; sessões com tokens de curta duração e renovação rotativa.</li>
+      <li>Isolamento por empresa: cada empresa só acessa os próprios contatos, conversas e configurações.</li>
+      <li>Arquivos de mídia acessados apenas pelo painel autenticado, nunca por link público.</li>
+      <li>Webhooks do WhatsApp validados pela assinatura da Meta.</li>
+    </ul>
+
+    <h2>9. Por quanto tempo guardamos</h2>
+    <p>
+      Guardamos os dados enquanto a empresa mantiver o contrato com o Zappe. Depois do encerramento, ou a pedido da
+      empresa, excluímos ou anonimizamos os dados em até 90 dias, exceto o que precisarmos manter para cumprir
+      obrigação legal ou exercer direitos em processos.
+    </p>
+
+    <h2>10. Seus direitos</h2>
+    <p>
+      Pela LGPD (art. 18) você pode pedir confirmação de que tratamos seus dados, acesso, correção, anonimização,
+      bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre compartilhamentos e revogação de
+      consentimento, quando ele for a base do tratamento. Escreva para
+      <a href="mailto:contato.zappe.ia@gmail.com">contato.zappe.ia@gmail.com</a>. Respondemos em até 15 dias. Se
+      seus dados vieram de uma conversa com uma empresa cliente, encaminhamos o pedido a ela, que é a controladora.
+      Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
+    </p>
+
+    <h2 id="exclusao">11. Como pedir a exclusão dos seus dados</h2>
+    <ul>
+      <li>
+        <strong>Empresa cliente que quer desconectar o WhatsApp</strong>: na tela WhatsApp do painel, use a opção de
+        desconectar o número. O Zappe cancela a assinatura dos webhooks e apaga o token de acesso da Meta. Você também
+        pode remover o acesso do app em Configurações do Negócio da Meta, em Integrações.
+      </li>
+      <li>
+        <strong>Exclusão da conta da empresa e de todos os dados</strong>: envie o pedido para
+        <a href="mailto:contato.zappe.ia@gmail.com">contato.zappe.ia@gmail.com</a> a partir do e-mail de um
+        administrador da conta. Confirmamos o pedido e concluímos a exclusão em até 90 dias.
+      </li>
+      <li>
+        <strong>Cliente final que conversou com uma empresa pelo WhatsApp</strong>: peça à própria empresa ou escreva
+        para o e-mail acima informando o número de telefone e o nome da empresa. Encaminhamos o pedido e, com a
+        autorização dela, excluímos o contato, as conversas e as mídias.
+      </li>
+    </ul>
+
+    <h2>12. Cookies e armazenamento no navegador</h2>
+    <p>
+      O painel do Zappe não usa cookies de publicidade ou de rastreamento. O navegador guarda apenas os tokens da sua
+      sessão, para que você não precise entrar de novo a cada recarga. Ao sair do painel, eles são apagados.
+    </p>
+
+    <h2>13. Alterações nesta política</h2>
+    <p>
+      Podemos atualizar esta política quando o serviço mudar. A data no topo indica a versão em vigor. Mudanças
+      relevantes serão avisadas às empresas clientes pelo e-mail cadastrado ou no painel.
+    </p>
+  </main>
+
+  <footer>Zappe · Endura Desafios Virtuais · CNPJ 59.173.759/0001-19</footer>
+</body>
+</html>
