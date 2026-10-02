@@ -16,7 +16,7 @@
 
   <main>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 30 de setembro de 2026</p>
+    <p class="updated">Última atualização: 2 de outubro de 2026</p>
 
     <p>
       O Zappe é uma plataforma em que empresas conectam o número oficial do WhatsApp (API de Nuvem da Meta) para que
@@ -56,7 +56,8 @@
         <tbody>
           <tr>
             <td>Empresas clientes</td>
-            <td>Razão social, CNPJ, plano contratado, configurações do atendimento (horário, regras e instruções da IA)
+            <td>Razão social, CNPJ, plano contratado, configurações do atendimento (horário, regras e instruções da IA),
+              consultas configuradas ao próprio sistema (endereço, descrição, parâmetros e token de acesso da consulta)
               e dados da conta do WhatsApp Business conectada: identificadores da conta e do número, nome verificado,
               número de telefone e o token de acesso concedido pela Meta.</td>
           </tr>
@@ -73,7 +74,8 @@
           <tr>
             <td>Uso do serviço</td>
             <td>Quantidade de conversas atendidas, minutos de áudio transcritos, tokens consumidos pela IA, tempo de
-              resposta e motivo das transferências para atendimento humano.</td>
+              resposta, motivo das transferências para atendimento humano e registro técnico das consultas feitas pela
+              IA (nome da consulta, parâmetros enviados, resultado e tempo, sem o conteúdo da resposta).</td>
           </tr>
         </tbody>
       </table>
@@ -104,6 +106,14 @@
       configuradas pela empresa. A empresa define quando a conversa passa para uma pessoa, e o cliente final pode pedir
       atendimento humano a qualquer momento. A IA é orientada a não negar que é uma IA quando perguntada.
     </p>
+    <p>
+      Quando a empresa configura consultas ao próprio sistema, a IA pode buscar informações atualizadas para responder,
+      como os eventos abertos ou o status de uma inscrição. O Zappe faz essas consultas em nome da empresa, apenas para
+      leitura e no endereço que ela cadastrou. Se a empresa ativar essa opção numa consulta, o Zappe envia ao sistema
+      dela o número de telefone do cliente da conversa, para que ela identifique o cliente e devolva só os dados dele.
+      <strong>Os dados retornados pelas consultas configuradas pela empresa são enviados ao provedor de IA para gerar a
+      resposta</strong>; o Zappe não guarda esse conteúdo, apenas o registro técnico de cada consulta.
+    </p>
 
     <h2>6. Com quem compartilhamos</h2>
     <p>Compartilhamos dados apenas com os fornecedores necessários para o funcionamento do serviço:</p>
@@ -121,7 +131,8 @@
           <tr>
             <td>Anthropic (Claude)</td>
             <td>Geração das respostas da IA e leitura de imagens</td>
-            <td>Texto e imagens da conversa, nome do cliente e instruções da empresa</td>
+            <td>Texto e imagens da conversa, nome do cliente, instruções da empresa e os dados retornados pelas
+              consultas configuradas pela empresa</td>
           </tr>
           <tr>
             <td>Groq ou OpenAI</td>
@@ -140,6 +151,11 @@
       Esses fornecedores tratam os dados apenas para prestar o serviço ao Zappe, segundo os próprios termos comerciais.
       Também podemos compartilhar dados quando exigido por lei ou ordem de autoridade competente.
     </p>
+    <p>
+      Nas consultas configuradas pela empresa, o Zappe envia ao sistema dela os parâmetros da consulta, preenchidos a
+      partir da conversa, e, quando ela ativar essa opção, o número de telefone do cliente. A empresa é a controladora
+      desses dados e responde pelo que o sistema dela devolve.
+    </p>
 
     <h2>7. Transferência internacional</h2>
     <p>
@@ -152,6 +168,8 @@
     <ul>
       <li>Comunicação criptografada (HTTPS/TLS) entre navegador, servidores e fornecedores.</li>
       <li>Tokens de acesso do WhatsApp guardados com criptografia AES-256-GCM.</li>
+      <li>Tokens das consultas guardados com a mesma criptografia, enviados só por HTTPS ao endereço cadastrado pela
+        empresa; consultas a endereços de rede interna são bloqueadas.</li>
       <li>Senhas guardadas apenas como hash; sessões com tokens de curta duração e renovação rotativa.</li>
       <li>Isolamento por empresa: cada empresa só acessa os próprios contatos, conversas e configurações.</li>
       <li>Arquivos de mídia acessados apenas pelo painel autenticado, nunca por link público.</li>
